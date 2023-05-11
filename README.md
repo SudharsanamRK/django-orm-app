@@ -48,8 +48,7 @@ admin.site.register(Student,StudentAdmin
 ## OUTPUT
 ![Screenshot 2023-05-11 144515](https://github.com/SudharsanamRK/django-orm-app/assets/115523484/e8dd044d-e518-48cf-aa1d-76cc5a1af514)
 
-![Uploading Screenshot 2023-05-11 144440.png…]()
-
+![Screenshot 2023-05-11 144440](https://github.com/SudharsanamRK/django-orm-app/assets/115523484/8e9d323e-c3ed-4ce0-bbdf-53e26df406a5)
 
 ## RESULT
-program successfully executed
+Program successfully executed
