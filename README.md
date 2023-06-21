@@ -23,23 +23,26 @@ Create django app and add student details.
 
 ## PROGRAM
 ```
-from django.db import models
+admin.py
 
-# Create your models here.
+from django.contrib import admin
+from.models import student,studentAdmin
+admin.site.register(student,studentAdmin)
+
+models.py
+
 from django.db import models
 from django.contrib import admin
-# create your models here
-class hangout(models.Model):
-    visitorname = models.CharField(max_length=10,primary_key=True)
-    visitorage = models.IntegerField()
-    pickuplocation = models.CharField(max_length=50)
-    venue = models.CharField(max_length=30)
-    numberofperson = models.IntegerField()
+class student(models.Model):
+    sid=models.CharField(max_length=200)
+    name=models.CharField(max_length=100)
+    salary=models.IntegerField()
+    age=models.IntegerField()
+    email=models.EmailField()
 
-class hangoutAdmin(admin.ModelAdmin):
+class studentAdmin(admin.ModelAdmin):
+    list_display=('sid','name','salary','age','email')
 
-    list_display = ('visitorname','visitorage','pickuplocation','venue','numberofperson')
-Include your code here
 ```
 
 
